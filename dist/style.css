@@ -1793,9 +1793,8 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+.bg-hero-mobile {
+  background-image: url('/images/mobile/image-hero.jpg');
 }
 
 .decoration-slice {
