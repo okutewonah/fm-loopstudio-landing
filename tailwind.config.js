@@ -11,6 +11,10 @@ module.exports = {
         "dark-gray": "hsl(0, 0%, 55%)",
         "very-dark-gray": "hsl(0, 0%, 41%)",
       },
+      fontFamily: {
+        JosefinSans: ["Josefin Sans", "sans-serif"],
+        Alata: ["Alata", "sans-serif"],
+      },
     },
   },
   plugins: [],
