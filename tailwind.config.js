@@ -18,6 +18,17 @@ module.exports = {
         "desktop-pocket-borealis":
           "url('/images/desktop/image-pocket-borealis.jpg')",
         "desktop-soccer-team": "url('/images/desktop/image-soccer-team.jpg')",
+        // Mobile
+        "mobile-deep-earth": "url('/images/mobile/image-deep-earth.jpg')",
+        "mobile-curiosity": "url('/images/mobile/image-curiosity.jpg')",
+        "mobile-fisheye": "url('/images/mobile/image-fisheye.jpg')",
+        "mobile-from-above": "url('/images/mobile/image-from-above.jpg')",
+        "mobile-grid": "url('/images/mobile/image-grid.jpg')",
+        "mobile-interactive": "url('/images/mobile/image-interactive.jpg')",
+        "mobile-night-arcade": "url('/images/mobile/image-night-arcade.jpg')",
+        "mobile-pocket-borealis":
+          "url('/images/mobile/image-pocket-borealis.jpg')",
+        "mobile-soccer-team": "url('/images/mobile/image-soccer-team.jpg')",
       },
       colors: {
         "dark-gray": "hsl(0, 0%, 55%)",

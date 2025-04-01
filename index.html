@@ -50,16 +50,28 @@
           ></a>
         </div>
         <div class="my-auto">
-          <div class="md:hidden">
-            <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+          <button
+            type="button"
+            data-collapse-toggle="mobile-menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            class="md:hidden"
+          >
+            <span class="sr-only">Open Menu</span>
+            <svg
+              width="24"
+              height="16"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g fill="#FFF" fill-rule="evenodd">
                 <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
               </g>
             </svg>
-          </div>
-          <div>
-            <ul class="hidden md:flex gap-x-6 text-white">
-              <li><a href="#about">About</a></li>
+          </button>
+          <div id="mobile-menu" class="hidden w-full md:block">
+            <ul class="flex flex-col md:flex md:flex-row gap-x-6 text-white">
+              <li><a href="#about" aria-current="page">About</a></li>
               <li><a href="#careers">Careers</a></li>
               <li><a href="#events">Events</a></li>
               <li><a href="#products">Products</a></li>
@@ -79,7 +91,7 @@
       </div>
     </header>
     <main>
-      <section id="about" class="md:px-40 mt-20 relative">
+      <section id="about" class="md:px-40 px-6 mt-20 relative">
         <div>
           <img src="./images/desktop/image-interactive.jpg" alt="" />
         </div>
@@ -97,20 +109,20 @@
           </p>
         </div>
       </section>
-      <section id="products" class="md:px-40 mt-20 relative">
-        <div class="flex justify-between">
+      <section id="products" class="md:px-40 px-6 my-20 relative">
+        <div class="flex flex-col md:flex-row justify-between">
           <h2 class="uppercase font-JosefinSans font-light text-4xl">
             Our creations
           </h2>
           <a
             href="#products"
-            class="uppercase border border-very-dark-gray text-black font-Alata tracking-[0.2rem] px-9 py-2 my-auto"
+            class="hidden md:flex uppercase border border-very-dark-gray text-black font-Alata tracking-[0.2rem] px-9 py-2 my-auto"
             >See all</a
           >
         </div>
-        <div class="mt-12 grid grid-cols-4 gap-9">
+        <div class="mt-12 grid md:grid-cols-4 gap-9">
           <div
-            class="relative md:bg-desktop-deep-earth bg-no-repeat md:bg-cover h-[400px]"
+            class="relative bg-mobile-deep-earth md:bg-desktop-deep-earth bg-cover bg-no-repeat md:bg-cover h-[200px] md:h-[500px]"
           >
             <!-- <img src="./images/desktop/image-deep-earth.jpg" alt="" /> -->
             <h2
@@ -120,7 +132,7 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-night-arcade bg-no-repeat md:bg-cover h-[400px]"
+            class="relative bg-mobile-night-arcade md:bg-desktop-night-arcade bg-cover bg-no-repeat md:bg-cover h-[200px] md:h-[500px]"
           >
             <!-- <img src="./images/desktop/image-night-arcade.jpg" alt="" /> -->
             <h2
@@ -130,17 +142,17 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-soccer-team bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-soccer-team bg-opacity-10 bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-soccer-team.jpg" alt="" /> -->
             <h2
-              class="absolute bottom-9 left-6 text-white uppercase text-3xl font-JosefinSans font-light"
+              class="absolute bottom-9 left-12 text-white uppercase text-3xl font-JosefinSans font-light"
             >
               Soccer <br />team VR
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-grid bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-grid bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-grid.jpg" alt="" /> -->
             <h2
@@ -150,7 +162,7 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-from-above bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-from-above bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-from-above.jpg" alt="" /> -->
             <h2
@@ -160,7 +172,7 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-pocket-borealis bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-pocket-borealis bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-pocket-borealis.jpg" alt="" /> -->
             <h2
@@ -170,7 +182,7 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-curiosity bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-curiosity bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-curiosity.jpg" alt="" /> -->
             <h2
@@ -180,48 +192,58 @@
             </h2>
           </div>
           <div
-            class="relative md:bg-desktop-fisheye bg-no-repeat md:bg-cover h-[400px]"
+            class="relative md:bg-desktop-fisheye bg-no-repeat md:bg-cover h-[500px]"
           >
             <!-- <img src="./images/desktop/image-fisheye.jpg" alt="" /> -->
             <h2
-              class="absolute bottom-9 left-6 text-white uppercase text-3xl font-JosefinSans font-light"
+              class="absolute bottom-9 left-9 text-white uppercase text-3xl font-JosefinSans font-light"
             >
               Make it <br />fisheye
             </h2>
           </div>
         </div>
+        <a
+          href="#products"
+          class="md:hidden uppercase border border-very-dark-gray text-black font-Alata tracking-[0.2rem] px-9 py-2 my-auto"
+          >See all</a
+        >
       </section>
     </main>
-    <footer id="support" class="bg-black md:px-40 mt-20 py-12 h-[150px]">
-      <div class="flex justify-between mb-6">
-        <div>
-          <img class="h-[20px]" src="./images/logo.svg" alt="" />
+    <footer
+      id="support"
+      class="bg-black py-9 flex flex-col justify-center text-center"
+    >
+      <div
+        class="grid md:grid-flow-col-dense md:grid-cols-2 md:grid-rows-2 md:px-40"
+      >
+        <div class="justify-self-center md:justify-self-start md:py-3">
+          <img src="./images/logo.svg" alt="" />
         </div>
-        <div class="flex gap-3">
-          <img class="h-[20px]" src="./images/icon-facebook.svg" alt="" /><img
-            class="h-[20px]"
-            src="./images/icon-twitter.svg"
-            alt=""
-          /><img
-            class="h-[20px]"
-            src="./images/icon-pinterest.svg"
-            alt=""
-          /><img class="h-[20px]" src="./images/icon-instagram.svg" alt="" />
-        </div>
-      </div>
-      <div class="flex justify-between font-Alata">
-        <div>
-          <ul class="hidden md:flex gap-x-6 text-white text-sm">
-            <li><a href="#about">About</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#support">Support</a></li>
+        <div class="py-3">
+          <ul
+            class="text-white grid gap-3 md:flex md:justify-self-start md:gap-x-9"
+          >
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
           </ul>
         </div>
-        <div>
-          <p class="text-dark-gray text-sm">
-            © 2021 Loopstudios. All rights reserved.
+        <div
+          class="flex justify-center gap-x-3 py-3 md:h-12 md:justify-self-end md:gap-x-6"
+        >
+          <img src="./images/icon-facebook.svg" alt="facebook" /><img
+            src="./images/icon-twitter.svg"
+            alt="twitter"
+          /><img src="./images/icon-pinterest.svg" alt="pinterest" /><img
+            src="./images/icon-instagram.svg"
+            alt="instagram"
+          />
+        </div>
+        <div class="py-3 md:justify-self-end">
+          <p class="text-dark-gray">
+            &copy; 2021 Loopstudios. All rights reserved.
           </p>
         </div>
       </div>
