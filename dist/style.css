@@ -793,6 +793,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -930,6 +934,18 @@ video {
 
 .h-\[240px\] {
   height: 240px;
+}
+
+.h-\[448px\] {
+  height: 448px;
+}
+
+.h-\[1000px\] {
+  height: 1000px;
+}
+
+.h-\[180px\] {
+  height: 180px;
 }
 
 .w-\[550px\] {
@@ -2024,6 +2040,14 @@ video {
   background-image: url('/images/mobile/image-fisheye.jpg');
 }
 
+.bg-desktop-interactive {
+  background-image: url('/images/desktop/image-interactive.jpg');
+}
+
+.bg-mobile-interactive {
+  background-image: url('/images/mobile/image-interactive.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2191,6 +2215,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-16 {
@@ -2369,6 +2398,22 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .tracking-\[0\.2rem\] {
@@ -2865,6 +2910,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:top-48 {
     top: 12rem;
   }
@@ -2875,6 +2928,14 @@ video {
 
   .md\:left-12 {
     left: 3rem;
+  }
+
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:right-52 {
+    right: 13rem;
   }
 
   .md\:block {
@@ -2917,12 +2978,28 @@ video {
     height: 1.5rem;
   }
 
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .md\:h-\[480px\] {
+    height: 480px;
+  }
+
   .md\:w-\[650px\] {
     width: 650px;
   }
 
   .md\:w-6 {
     width: 1.5rem;
+  }
+
+  .md\:w-\[550px\] {
+    width: 550px;
   }
 
   .md\:grid-flow-col {
@@ -3033,6 +3110,10 @@ video {
     justify-self: center;
   }
 
+  .md\:text-wrap {
+    text-wrap: wrap;
+  }
+
   .md\:bg-desktop-curiosity {
     background-image: url('/images/desktop/image-curiosity.jpg');
   }
@@ -3069,6 +3150,10 @@ video {
     background-image: url('/images/desktop/image-hero.jpg');
   }
 
+  .md\:bg-desktop-interactive {
+    background-image: url('/images/desktop/image-interactive.jpg');
+  }
+
   .md\:bg-cover {
     background-size: cover;
   }
@@ -3079,6 +3164,10 @@ video {
 
   .md\:p-1 {
     padding: 0.25rem;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
   }
 
   .md\:px-40 {
@@ -3107,6 +3196,18 @@ video {
     padding-top: 0px;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
+  }
+
+  .md\:text-start {
+    text-align: start;
+  }
+
   .md\:text-\[3rem\] {
     font-size: 3rem;
   }
@@ -3116,8 +3217,44 @@ video {
     line-height: 2.25rem;
   }
 
+  .md\:leading-none {
+    line-height: 1;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
+  }
+
   .md\:tracking-\[1rem\] {
     letter-spacing: 1rem;
+  }
+
+  .md\:tracking-wide {
+    letter-spacing: 0.025em;
+  }
+
+  .md\:tracking-normal {
+    letter-spacing: 0em;
+  }
+
+  .md\:tracking-wider {
+    letter-spacing: 0.05em;
+  }
+
+  .md\:tracking-\[0\.03em\] {
+    letter-spacing: 0.03em;
+  }
+
+  .md\:tracking-\[0\.027em\] {
+    letter-spacing: 0.027em;
+  }
+
+  .md\:tracking-\[0\.02em\] {
+    letter-spacing: 0.02em;
+  }
+
+  .md\:tracking-\[0\.015em\] {
+    letter-spacing: 0.015em;
   }
 }
 
