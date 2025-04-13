@@ -861,6 +861,10 @@ video {
   display: none;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
@@ -871,10 +875,6 @@ video {
 
 .h-\[750px\] {
   height: 750px;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .min-h-screen {
@@ -1940,43 +1940,43 @@ video {
 }
 
 .bg-hero-mobile {
-  background-image: url("./images/mobile/image-hero.jpg");
+  background-image: url("/images/mobile/image-hero.jpg");
 }
 
 .bg-mobile-curiosity {
-  background-image: url("./images/mobile/image-curiosity.jpg");
+  background-image: url("/images/mobile/image-curiosity.jpg");
 }
 
 .bg-mobile-deep-earth {
-  background-image: url("./images/mobile/image-deep-earth.jpg");
+  background-image: url("/images/mobile/image-deep-earth.jpg");
 }
 
 .bg-mobile-fisheye {
-  background-image: url("./images/mobile/image-fisheye.jpg");
+  background-image: url("/images/mobile/image-fisheye.jpg");
 }
 
 .bg-mobile-from-above {
-  background-image: url("./images/mobile/image-from-above.jpg");
+  background-image: url("/images/mobile/image-from-above.jpg");
 }
 
 .bg-mobile-grid {
-  background-image: url("./images/mobile/image-grid.jpg");
+  background-image: url("/images/mobile/image-grid.jpg");
 }
 
 .bg-mobile-interactive {
-  background-image: url("./images/mobile/image-interactive.jpg");
+  background-image: url("/images/mobile/image-interactive.jpg");
 }
 
 .bg-mobile-night-arcade {
-  background-image: url("./images/mobile/image-night-arcade.jpg");
+  background-image: url("/images/mobile/image-night-arcade.jpg");
 }
 
 .bg-mobile-pocket-borealis {
-  background-image: url("./images/mobile/image-pocket-borealis.jpg");
+  background-image: url("/images/mobile/image-pocket-borealis.jpg");
 }
 
 .bg-mobile-soccer-team {
-  background-image: url("./images/mobile/image-soccer-team.jpg");
+  background-image: url("/images/mobile/image-soccer-team.jpg");
 }
 
 .decoration-slice {
@@ -2122,24 +2122,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pt-16 {
@@ -2977,58 +2962,42 @@ video {
   }
 
   .md\:bg-desktop-curiosity {
-    background-image: url("./images/desktop/image-curiosity.jpg");
+    background-image: url("/images/desktop/image-curiosity.jpg");
   }
 
   .md\:bg-desktop-deep-earth {
-    background-image: url("./images/desktop/image-deep-earth.jpg");
+    background-image: url("/images/desktop/image-deep-earth.jpg");
   }
 
   .md\:bg-desktop-fisheye {
-    background-image: url("./images/desktop/image-fisheye.jpg");
+    background-image: url("/images/desktop/image-fisheye.jpg");
   }
 
   .md\:bg-desktop-from-above {
-    background-image: url("./images/desktop/image-from-above.jpg");
+    background-image: url("/images/desktop/image-from-above.jpg");
   }
 
   .md\:bg-desktop-grid {
-    background-image: url("./images/desktop/image-grid.jpg");
+    background-image: url("/images/desktop/image-grid.jpg");
   }
 
   .md\:bg-desktop-interactive {
-    background-image: url("./images/desktop/image-interactive.jpg");
+    background-image: url("/images/desktop/image-interactive.jpg");
   }
 
   .md\:bg-desktop-night-arcade {
-    background-image: url("./images/desktop/image-night-arcade.jpg");
+    background-image: url("/images/desktop/image-night-arcade.jpg");
   }
 
   .md\:bg-desktop-pocket-borealis {
-    background-image: url("./images/desktop/image-pocket-borealis.jpg");
+    background-image: url("/images/desktop/image-pocket-borealis.jpg");
   }
 
   .md\:bg-desktop-soccer-team {
-    background-image: url("./images/desktop/image-soccer-team.jpg");
+    background-image: url("/images/desktop/image-soccer-team.jpg");
   }
 
   .md\:bg-hero-desktop {
-    background-image: url("./images/desktop/image-hero.jpg");
-  }
-
-  .md\:bg-\[url\(\'\/images\/desktop\/image-hero\'\)\] {
-    background-image: url("./images/desktop/image-hero");
-  }
-
-  .md\:bg-\[url\(\'\.\/images\/desktop\/image-hero\'\)\] {
-    background-image: url("./images/desktop/image-hero");
-  }
-
-  .md\:bg-\[url\(\'\.\/images\/desktop\/image-hero\.jpg\'\)\] {
-    background-image: url("./images/desktop/image-hero.jpg");
-  }
-
-  .md\:bg-\[url\(\'\/images\/desktop\/image-hero\.jpg\'\)\] {
     background-image: url("./images/desktop/image-hero.jpg");
   }
 
