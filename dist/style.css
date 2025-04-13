@@ -974,6 +974,10 @@ video {
   animation: open-menu 0.5s ease-in-out forwards;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }

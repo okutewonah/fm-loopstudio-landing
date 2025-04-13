@@ -52,11 +52,12 @@
           </div>
           <div class="my-auto">
             <button
+              id="hamburger-button"
               type="button"
               data-collapse-toggle="mobile-menu"
               aria-controls="mobile-menu"
               aria-expanded="false"
-              class="md:hidden"
+              class="md:hidden cursor-pointer"
             >
               <span class="sr-only">Open Menu</span>
               <svg
@@ -70,8 +71,8 @@
                 </g>
               </svg>
             </button>
-            <div id="mobile-menu" class="hidden w-full md:block">
-              <ul class="flex flex-col md:flex md:flex-row gap-x-6 text-white">
+            <div class="hidden w-full md:block">
+              <ul class="hidden md:flex md:flex-row gap-x-6 text-white">
                 <li><a href="#about" aria-current="page">About</a></li>
                 <li><a href="#careers">Careers</a></li>
                 <li><a href="#events">Events</a></li>
@@ -292,5 +293,6 @@
         >. Coded by <a href="#">Okute Wonah</a>.
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
